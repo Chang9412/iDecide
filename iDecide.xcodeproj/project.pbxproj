@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		843D58545D27D704CCB3D3DA /* Pods_iDecide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E34C67B80BD0D25B235EB6EA /* Pods_iDecide.framework */; };
 		9C075C2528422DAF002E4C3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C075C2428422DAF002E4C3B /* AppDelegate.swift */; };
 		9C075C2728422DAF002E4C3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C075C2628422DAF002E4C3B /* SceneDelegate.swift */; };
 		9C075C2928422DAF002E4C3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C075C2828422DAF002E4C3B /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00F44CFC17F35C20783CA6FD /* Pods-iDecide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDecide.debug.xcconfig"; path = "Target Support Files/Pods-iDecide/Pods-iDecide.debug.xcconfig"; sourceTree = "<group>"; };
+		079C12E57EFA41011A213C32 /* Pods-iDecide.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDecide.release.xcconfig"; path = "Target Support Files/Pods-iDecide/Pods-iDecide.release.xcconfig"; sourceTree = "<group>"; };
 		9C075C2128422DAF002E4C3B /* iDecide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDecide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C075C2428422DAF002E4C3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C075C2628422DAF002E4C3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		9C075C2D28422DB0002E4C3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C075C3028422DB0002E4C3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C075C3228422DB0002E4C3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E34C67B80BD0D25B235EB6EA /* Pods_iDecide.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iDecide.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				843D58545D27D704CCB3D3DA /* Pods_iDecide.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26E6D3694285808489F4F1F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				00F44CFC17F35C20783CA6FD /* Pods-iDecide.debug.xcconfig */,
+				079C12E57EFA41011A213C32 /* Pods-iDecide.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9C075C1828422DAF002E4C3B = {
 			isa = PBXGroup;
 			children = (
 				9C075C2328422DAF002E4C3B /* iDecide */,
 				9C075C2228422DAF002E4C3B /* Products */,
+				26E6D3694285808489F4F1F8 /* Pods */,
+				F3F2CDBFF425176CFBB11F09 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = iDecide;
 			sourceTree = "<group>";
 		};
+		F3F2CDBFF425176CFBB11F09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E34C67B80BD0D25B235EB6EA /* Pods_iDecide.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9C075C3528422DB0002E4C3B /* Build configuration list for PBXNativeTarget "iDecide" */;
 			buildPhases = (
+				55536A82F00FAF05DCCB328F /* [CP] Check Pods Manifest.lock */,
 				9C075C1D28422DAF002E4C3B /* Sources */,
 				9C075C1E28422DAF002E4C3B /* Frameworks */,
 				9C075C1F28422DAF002E4C3B /* Resources */,
@@ -132,6 +158,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		55536A82F00FAF05DCCB328F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iDecide-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9C075C1D28422DAF002E4C3B /* Sources */ = {
@@ -282,6 +333,7 @@
 		};
 		9C075C3628422DB0002E4C3B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00F44CFC17F35C20783CA6FD /* Pods-iDecide.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +362,7 @@
 		};
 		9C075C3728422DB0002E4C3B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 079C12E57EFA41011A213C32 /* Pods-iDecide.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
